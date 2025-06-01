@@ -3,17 +3,93 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="/src/styles.css" rel="stylesheet">
+  <link href="styles.css" rel="stylesheet">
 </head>
-<body>
-    <div id="particles-js"></div>
+<style>
+/* Reset some default styling */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 
-<script src="particles.js"></script>
+/* Set body styling */
+body {
+    font-family: Arial, sans-serif; /* Use a clean, sans-serif font */
+    line-height: 1.6; /* Improve readability with line-height */
+    background-color: #f4f4f4; /* A light background color */
+    color: #333; /* Dark text color for contrast */
+}
+
+/* Style the container div for a dark background */
+#dark {
+    background-color: #333; /* Dark background color */
+    height: 100px; /* Set a fixed height */
+    margin-bottom: 20px; /* Space below the div */
+}
+
+/* Style h1 elements */
+h1 {
+    margin: 10px 0; /* Space around each heading */
+    text-align: center; /* Center the text */
+    font-size: 1.5em; /* Responsive font size */
+}
+
+/* Style buttons */
+.button {
+    display: inline-block; /* Make the link a block/button */
+    padding: 10px 20px; /* Space inside the button */
+    background-color: #5cb85c; /* Bootstrap primary color */
+    color: white; /* Button text color */
+    text-decoration: none; /* Remove underline from links */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s; /* Transition for hover effect */
+    text-align: center; /* Center the text inside button */
+}
+
+/* Add hover effect */
+.button:hover {
+    background-color: #4cae4c; /* Darker shade on hover */
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.2em; /* Reduce font size for smaller screens */
+    }
+
+    .button {
+        padding: 8px 16px; /* Adjust button size for smaller screens */
+        font-size: 0.9em; /* Slightly smaller font size on the button */
+    }
+}
+
+@media (max-width: 480px) {
+    #dark {
+        height: 80px; /* Slightly reduce height of the dark section */
+    }
+
+    h1 {
+        font-size: 1em; /* Further reduce font size for very small screens */
+    }
+
+    .button {
+        width: 100%; /* Full width button on small screens */
+        margin: 10px 0; /* Space around the button */
+    }
+}
+  </style>
+<body>
+<div id="dark"></div>
+<h1> hi </h1>
   <h1>
 Hi there! Welcome to the A website a website that has a A in the domain name.
   </h1>
    <h1>
-I don't know what to add but 
+I don't know what to add but you can give a suggestion by clicking the button below.
   </h1>
+ <a href="suggestion.html" class="button">Go to suggestions</a>
+  
+  
 </body>
 </html>
