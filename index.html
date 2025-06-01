@@ -5,9 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
   <link href="styles.css" rel="stylesheet">
-  <script src="script.js" defer></script> <!-- Link JavaScript -->
+  <script src="particles.js"></script>
+  <script src="app.js" defer></script>
 </head>
 <body>
+  <div id="particles-js"></div>
   <div id="background"></div> <!-- Background div for interactive effect -->
   <div id="content"> <!-- Content wrapper -->
     <div id="dark"></div>
@@ -16,5 +18,10 @@
     <h1>I don't know what to add but you can give a suggestion by clicking the button below.</h1>
     <a href="suggestion.html" class="button">Go to suggestions</a>
   </div>
+  <script>
+    particlesJS.load('particles-js', 'particles.json', function() {
+      console.log('particles.js loaded');
+    });
+  </script>
 </body>
 </html>
