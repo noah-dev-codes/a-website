@@ -1,0 +1,93 @@
+/* Reset some default styling */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Set body styling */
+body {
+    font-family: 'Montserrat', sans-serif; /* Modern sans-serif font */
+    line-height: 1.6; /* Improve readability with line-height */
+    color: #333; /* Dark text color for contrast */
+    overflow: hidden; /* Prevent scrollbars when using interactive background */
+}
+
+/* Create full-screen interactive background */
+#background {
+    position: fixed; /* Fixes the background position */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1; /* Send it behind other content */
+    transition: background-color 0.5s ease; /* Smooth background transition */
+}
+
+/* Style the container for the content */
+#content {
+    position: relative; /* Keep content above the background */
+    z-index: 1; /* Ensure the content appears above the background */
+    text-align: center; /* Center the text */
+    padding: 20px; /* Add some padding around content */
+}
+
+/* Style the dark section */
+#dark {
+    width: 100%;
+    height: 100px;
+    background-color: #333;
+    margin-bottom: 20px;
+    border-radius: 0 0 5px 5px;
+}
+
+/* Style h1 elements */
+h1 {
+    margin: 10px 0; /* Space around each heading */
+    font-size: 2rem; /* Responsive font size */
+    font-weight: 700; /* Bold font weight */
+    transition: transform 0.3s; /* Small scale effect */
+    color: #5cb85c; /* Light green color */
+}
+
+/* Style buttons */
+.button {
+    display: inline-block; /* Make the link a block/button */
+    padding: 0.75rem 1.5rem; /* Space inside the button */
+    background-color: #5cb85c; /* Button color */
+    color: white; /* Button text color */
+    text-decoration: none; /* Remove underline from links */
+    border-radius: 5px; /* Rounded corners */
+    border: 1px solid transparent; /* Transparent border */
+    transition: background-color 0.3s, transform 0.2s; /* Transition for hover effect */
+    box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08); /* Light shadow */
+}
+
+/* Add hover effect */
+.button:hover {
+    background-color: #4cae4c; /* Darker shade on hover */
+    transform: scale(1.05); /* Small scale effect on hover */
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.5rem; /* Reduce font size for smaller screens */
+    }
+
+    .button {
+        padding: 0.5rem 1rem; /* Adjust button size for smaller screens */
+        font-size: 0.9em; /* Slightly smaller font size */
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.25rem; /* Further reduce font size on very small screens */
+    }
+
+    .button {
+        width: 100%; /* Full width on small screens */
+        margin: 10px 0; /* Space around the button */
+    }
+}
